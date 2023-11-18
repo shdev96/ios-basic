@@ -17,6 +17,9 @@
 		E55D2CA82B08DA0A0000F328 /* ios_basicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D2CA72B08DA0A0000F328 /* ios_basicUITests.swift */; };
 		E55D2CAA2B08DA0A0000F328 /* ios_basicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D2CA92B08DA0A0000F328 /* ios_basicUITestsLaunchTests.swift */; };
 		E55D2CB82B08DB730000F328 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D2CB72B08DB730000F328 /* HttpClient.swift */; };
+		E55D2CBB2B08F4970000F328 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D2CBA2B08F4970000F328 /* TestModel.swift */; };
+		E55D2CBD2B08F58B0000F328 /* RegisterResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D2CBC2B08F58B0000F328 /* RegisterResponseDTO.swift */; };
+		E55D2CC02B08F65F0000F328 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D2CBF2B08F65F0000F328 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		E55D2CA72B08DA0A0000F328 /* ios_basicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_basicUITests.swift; sourceTree = "<group>"; };
 		E55D2CA92B08DA0A0000F328 /* ios_basicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_basicUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E55D2CB72B08DB730000F328 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		E55D2CBA2B08F4970000F328 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		E55D2CBC2B08F58B0000F328 /* RegisterResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseDTO.swift; sourceTree = "<group>"; };
+		E55D2CBF2B08F65F0000F328 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 		E55D2C862B08DA090000F328 /* ios-basic */ = {
 			isa = PBXGroup;
 			children = (
+				E55D2CBE2B08F6500000F328 /* Utils */,
+				E55D2CB92B08F48D0000F328 /* Models */,
 				E55D2CB62B08DB640000F328 /* Clients */,
 				E55D2C872B08DA090000F328 /* ios_basicApp.swift */,
 				E55D2C892B08DA090000F328 /* ContentView.swift */,
@@ -142,6 +150,23 @@
 				E55D2CB72B08DB730000F328 /* HttpClient.swift */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		E55D2CB92B08F48D0000F328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E55D2CBA2B08F4970000F328 /* TestModel.swift */,
+				E55D2CBC2B08F58B0000F328 /* RegisterResponseDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E55D2CBE2B08F6500000F328 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E55D2CBF2B08F65F0000F328 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +302,11 @@
 				E55D2CB82B08DB730000F328 /* HttpClient.swift in Sources */,
 				E55D2C912B08DA0A0000F328 /* Persistence.swift in Sources */,
 				E55D2C8A2B08DA090000F328 /* ContentView.swift in Sources */,
+				E55D2CBB2B08F4970000F328 /* TestModel.swift in Sources */,
 				E55D2C942B08DA0A0000F328 /* ios_basic.xcdatamodeld in Sources */,
 				E55D2C882B08DA090000F328 /* ios_basicApp.swift in Sources */,
+				E55D2CBD2B08F58B0000F328 /* RegisterResponseDTO.swift in Sources */,
+				E55D2CC02B08F65F0000F328 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

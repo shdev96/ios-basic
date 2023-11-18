@@ -72,20 +72,13 @@ struct HttpClient {
         }
         
         let configuration = URLSessionConfiguration.default
-        //        configuration.httpAdditionalHeaders = ???
+        configuration.httpAdditionalHeaders = ["Content-Type": "application/json"]
         let session = URLSession(configuration: configuration)
         
         let(data, response) = try await session.data(for: request)
         
-        guard let httpResponse = response as? HTTPURLResponse else {
+        guard let _ = response as? HTTPURLResponse else {
             throw NetworkError.invalidResponse
-        }
-        
-        switch httpResponse.statusCode {
-            case 409:
-                throw NetworkError.serverError("Username is already taken.")
-            default:
-                break
         }
         
         guard let result = try?JSONDecoder().decode(resource.modelType, from: data) else {
